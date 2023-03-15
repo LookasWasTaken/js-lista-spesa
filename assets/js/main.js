@@ -39,7 +39,7 @@ function addItem() {
     console.log(shoppingList);
     listEl.insertAdjacentHTML(
       "beforeend",
-      `<li>C'è da comprare ${inputValue}</li>`
+      `<li>C'è da comprare anche <span>${inputValue}</span></li>`
     );
     return false;
   }
