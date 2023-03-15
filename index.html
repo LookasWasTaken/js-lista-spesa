@@ -5,9 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Shopping Cart</title>
+    <title>Lista della Spesa</title>
 </head>
 <body>
+    <div class="container">
+        <h1>Lista della Spesa</h1>
+        <form onsubmit="return addItem()">
+            <input type="text" id="input" placeholder="Cosa manca?">
+            <input type="submit" value="Aggiungi">
+           </form>
+        <ul id="list"></ul>
+        
+    </div>
     <script src="./assets/js/main.js"></script>
 </body>
 </html>
