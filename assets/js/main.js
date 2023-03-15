@@ -33,10 +33,14 @@ while (i < shoppingList.length) {
 }
 
 function addItem() {
-    inputValue = document.getElementById("input").value;
+  inputValue = document.getElementById("input").value;
+  if (inputValue != "") {
     shoppingList.push(inputValue);
     console.log(shoppingList);
-    listEl.insertAdjacentHTML("beforeend", `<li>C'è da comprare ${inputValue}</li>`);
+    listEl.insertAdjacentHTML(
+      "beforeend",
+      `<li>C'è da comprare ${inputValue}</li>`
+    );
     return false;
   }
-  
+}
